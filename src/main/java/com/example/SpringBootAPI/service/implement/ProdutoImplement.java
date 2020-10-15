@@ -1,12 +1,13 @@
-package com.example.crud.postgresql.service.implement;
+package com.example.SpringBootAPI.service.implement;
 
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 
-import com.example.crud.postgresql.model.Produto;
-import com.example.crud.postgresql.repository.ProdutoRepository;
-import com.example.crud.postgresql.service.ProdutoService;
+import com.example.SpringBootAPI.model.Produto;
+import com.example.SpringBootAPI.repository.ProdutoRepository;
+import com.example.SpringBootAPI.service.ProdutoService;
+
 
 public class ProdutoImplement implements ProdutoService{
 

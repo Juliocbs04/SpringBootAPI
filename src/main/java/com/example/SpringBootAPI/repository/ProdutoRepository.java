@@ -1,9 +1,9 @@
-package com.example.crud.postgresql.repository;
+package com.example.SpringBootAPI.repository;
+
 import org.springframework.data.jpa.repository.JpaRepository;
 
-import com.example.crud.postgresql.model.Produto;
+import com.example.SpringBootAPI.model.Produto;
 
-
-public interface ProdutoRepository extends JpaRepository<Produto, Long>{
+public interface ProdutoRepository extends JpaRepository<Produto, Long> {
 
 }

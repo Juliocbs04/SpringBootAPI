@@ -1,8 +1,8 @@
-package com.example.crud.postgresql.service;
+package com.example.SpringBootAPI.service;
 
 import java.util.List;
 
-import com.example.crud.postgresql.model.Produto;
+import com.example.SpringBootAPI.model.Produto;
 
 public interface ProdutoService {
 

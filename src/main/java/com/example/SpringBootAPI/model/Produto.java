@@ -1,4 +1,4 @@
-package com.example.crud.postgresql.model;
+package com.example.SpringBootAPI.model;
 
 import java.time.LocalDate;
 
