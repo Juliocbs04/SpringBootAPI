@@ -1,8 +1,8 @@
-package com.example.SpringBootAPI.repository;
+package com.example.spring.repository;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 
-import com.example.SpringBootAPI.model.Produto;
+import com.example.spring.model.Produto;
 
 public interface ProdutoRepository extends JpaRepository<Produto, Long> {
 

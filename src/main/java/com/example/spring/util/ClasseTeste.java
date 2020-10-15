@@ -1,4 +1,4 @@
-package com.example.SpringBootAPI.util;
+package com.example.spring.util;
 
 import java.time.LocalDate;
 import java.util.ArrayList;
@@ -7,8 +7,8 @@ import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
-import com.example.SpringBootAPI.model.Produto;
-import com.example.SpringBootAPI.repository.ProdutoRepository;
+import com.example.spring.model.Produto;
+import com.example.spring.repository.ProdutoRepository;
 
 @Component
 public class ClasseTeste {

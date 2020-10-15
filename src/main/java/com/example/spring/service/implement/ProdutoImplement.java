@@ -1,12 +1,12 @@
-package com.example.SpringBootAPI.service.implement;
+package com.example.spring.service.implement;
 
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 
-import com.example.SpringBootAPI.model.Produto;
-import com.example.SpringBootAPI.repository.ProdutoRepository;
-import com.example.SpringBootAPI.service.ProdutoService;
+import com.example.spring.model.Produto;
+import com.example.spring.repository.ProdutoRepository;
+import com.example.spring.service.ProdutoService;
 
 
 public class ProdutoImplement implements ProdutoService{
