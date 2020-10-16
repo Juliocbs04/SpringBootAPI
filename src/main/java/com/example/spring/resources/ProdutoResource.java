@@ -21,40 +21,33 @@ import io.swagger.annotations.ApiOperation;
 
 @RestController
 @RequestMapping(value = "/api")
-@Api(value = "API REST Produtos")
-@CrossOrigin(origins = "*")
 public class ProdutoResource {
 
 	@Autowired
 	ProdutoRepository produtoRepository;
 
 	@GetMapping("/produtos")
-	@ApiOperation(value="Retorna uma lista de produtos")
 	public List<Produto> listaProdutos() {
 		return produtoRepository.findAll();
 	}
 
 	@GetMapping("/produto/{id}")
-	@ApiOperation(value="Retorna um produto único")
 	public Produto listaProdutoUnico(@PathVariable(value = "id") long id) {
 		return produtoRepository.findById(id).get();
 	}
 
 	@PostMapping("/produto")
-	@ApiOperation(value="Salva um produto")
 	public Produto salvaProduto(@RequestBody Produto produto) {
 		return produtoRepository.save(produto);
 	}
 	
 	@DeleteMapping("/produto")
-	@ApiOperation(value="Deleta um Produto pelo seu ID")
 	public void deletarProduto(@RequestBody Produto produto) {
 		Produto exclusao = produtoRepository.findById(produto.getId_produto()).get();
 		produtoRepository.delete(exclusao);
 	}
 	
 	@PutMapping("/produto")
-	@ApiOperation(value="Atualiza um Produto")
 	public void atualizarProduto(@RequestBody Produto produto) {
 		produtoRepository.save(produto);
 	}
